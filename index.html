@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yash • Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Optional: Google Font (if online) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">My First Portfolio</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Hi, I'm Yash</h2>
+          <p class="lead">IT student • Web Developer • Problem solver. I build clean, responsive websites and simple web apps.</p>
+          <p class="cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn-outline" href="#contact">Hire / Contact</a>
+          </p>
+        </div>
+
+        <div class="hero-image">
+          <!-- Place your image in "images/profile.jpg" -->
+          <div class="avatar-wrap">
+            <img src="Yash.jpg" alt="Yash profile photo" class="avatar" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h3>About</h3>
+      <p>Simple professional intro about you. Add 3–4 lines: education, interests, what you build, and what you're looking for.</p>
+    </section>
+
+    <section id="skills" class="section container">
+      <h3>Skills</h3>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript (basic)</li>
+        <li>SQL / MySQL</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section container">
+      <h3>Projects</h3>
+      <div class="projects-grid">
+        <article class="card">
+          <h4>Project 1</h4>
+          <p>Short description of the project. What it does and tech used.</p>
+        </article>
+        <article class="card">
+          <h4>Project 2</h4>
+          <p>Short description of another project. Link or demo info here.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>LinkedIn / GitHub: add links</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Yash — Built with HTML & CSS</p>
+    </div>
+  </footer>
+
+  <script>
+    // auto year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
